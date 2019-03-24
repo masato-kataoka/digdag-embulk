@@ -10,12 +10,7 @@ digdag provides native support to call embulk. Embulk enables data movement in m
 # Start a digdag server instance with an in-memory database
 In this mode, digdag removes the data when the server exits. Use this for test purposes only.
 
-    $ docker-compose up
-
-# Stop a digdag server instance with an in-memory database
-In this mode, digdag removes the data when the server exits. Use this for test purposes only.
-
-    $ docker-compose stop
+    $ docker run -it --rm -p 65432:65432 masato-kataoka/digdag-embulk
 
 # Reference 
 - https://hub.docker.com/r/satvidh/digdag-embulk
