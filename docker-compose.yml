@@ -6,3 +6,5 @@ services:
     ports:
       - 65432:65432
       - 65433:65433
+    volumes:
+      - .:/opt/digdag
